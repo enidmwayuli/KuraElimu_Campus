@@ -1,0 +1,154 @@
+<head>
+    <!-- Meta tags -->
+    <link rel="shortcut icon" href="icon.png?198024179"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Meta tags end -->
+    <!-- Stylesheets starts here -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="vendors/animate/css/animate.min.css" rel="stylesheet" />
+    <!-- simple line icons -->
+    <link href="css/simple-line-icons.css" rel="stylesheet" />
+    <!--revolution-slider-->  
+
+    <link rel="stylesheet" href="vendors/revolution-slider/rs-plugin/css/settings.css" media="screen" />
+    <link rel="stylesheet" href="vendors/revolution-slider/css/layers.css" />
+    <link rel="stylesheet" href="vendors/revolution-slider/css/navigation.css" />
+    <link rel="stylesheet" href="vendors/OwlCarousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="vendors/OwlCarousel/owl-carousel/owl.theme.css">
+    <link href="css/custom.css" rel="stylesheet" />
+    <!-- Stylesheets ends here -->
+    <!-- <title>Home</title> -->
+</head>
+<!-- head end -->
+
+<body>
+    <!-- preloader start -->
+    <div class="preloader" style=" position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:100000;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: #ffffff;">
+        <div style=" width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-position: center;
+    margin: -100px 0 0 -100px;">
+            <img src="images/loading/img.gif" width="100%" alt="loading...">
+        </div>
+    </div>
+    <div class="uv-rounds">
+        <header>
+            <div class="top-section top">
+                <div class="container">
+                    <div class="row">              
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.top-section -->
+            <div class="bottom-section">
+                <div class="container bottom">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 logo">
+                            <a href="index1.php">
+                                <img src="images/logo.png" alt="logo" id="logotop" />
+                            </a>
+                        </div>
+                        <!-- /.logo -->
+                        <div class="col-lg-9 col-md-9 nav-outer">
+                            <nav class="navbar navbar-default">
+                                <div class="container-fluid">
+                                    <!-- Brand and toggle get grouped for better mobile display -->
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                    </div>
+                                    <!-- Collect the nav links, forms, and other content for toggling -->
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">                                  												   								   									   									   
+                                           <li><a href="mbona.php" class="hvr-underline-from-center">Mbona Ujitokeze?</a></li>                                           
+                                    <!--         <li><a href="political.html" class="hvr-underline-from-center">Political System</a></li> -->                                       
+                                          <li class="active">
+                                                <a href="#" class="dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Tupatane Wapi?
+												<span class="sr-only">(current)</span>
+                                                    <span class="caret"></span></a>
+                                                <ul class="dropdown-menu dropdown-spcing">
+                                                    <li>
+                                                        <a href="whereto.php">Kutakapo Pigiwa Kura</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="howto.php">Jinsi Ya Kupiga Kura</a>
+                                                    </li>
+                                                </ul>
+                                            </li>	                         
+												 <li class="active">
+                                                <a href="#" class="dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                           Wagombeaji
+                                                <span class="sr-only">(current)</span>
+                                                    <span class="caret"></span></a>
+                                                <ul class="dropdown-menu dropdown-spcing">
+                                                    <li>
+                                                        <a href="president.php">President</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="secgen.php">Secretary General</a>
+                                                    </li>
+                                                      <li>
+                                                        <a href="finance.php">Finance Secretary</a>
+                                                    </li>
+                                                      <li>
+                                                        <a href="special.php">Special Needs Secretary</a>
+                                                    </li>
+                                                      <li>
+                                                        <a href="accomodation.php">Catering and Accomodation</a>
+                                                    </li>
+                                                     <li>
+                                                        <a href="mca.php">Sports and Games</a>
+                                                    </li>
+                                                </ul>
+                                            </li>                                                       
+                                              	<li>
+                                              <a href="feedback2.php" class="remove-border hvr-underline-from-center">Tusemezane</a>
+                                              	</li>
+                                                <?php
+                                                $wedding = strtotime("2017-02-28 12:00:00"); // or whenever the wedding is
+                                                $current=strtotime('now');
+                                                $diffference =$wedding-$current;
+                                                $days=floor($diffference / (60*60*24) );
+                                             ?>
+                                             <li> <?php 
+                                            echo "<a href=''class='remove-border hvr-underline-from-center' style='color:red'> Siku $days Pekee</a>";
+                                                ?>
+                                                </li>
+                                           <!-- <a href="#" class="mail-ico msg-gap hidden-xs"><i class="fa fa-envelope-o for_inifial"></i></a>
+                                           -->
+                                        </ul>
+                                    </div>
+                                    <!-- /.navbar-collapse -->
+                                </div>
+                                <!-- /.container-fluid -->
+                            </nav>
+                        </div>
+                        <!-- /.nav-outer -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.bottom-section -->
+        </header>
